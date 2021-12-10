@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.5rem;
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header" 120px "easy" 1fr "hard" 1fr "footer" 80px;
+}
+
+header {
+  grid-area: header;
+  border: darkslategrey 3px solid;
+  text-align: center;
+  background-color: darkorange;
+}
+
+.title {
+  color: snow;
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.easy {
+  grid-area: easy;
+  background-color: navy;
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
+  border: darkslategrey 3px solid;
+}
+
+.hard {
+  grid-area: hard;
+  background-color: tomato;
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
+  border: darkslategrey 3px solid;
+}
+
+h4 {
+  color: aliceblue;
+}
+
+footer {
+  grid-area: footer;
+  border: darkslategrey 3px solid;
+  text-align: center;
+  background-color: darkorange;
+}
+/*# sourceMappingURL=nav.css.map */

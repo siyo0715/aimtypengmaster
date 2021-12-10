@@ -1,0 +1,77 @@
+// ヘッダーとフッターの共通部分
+@mixin header-footer {
+  border: darkslategrey 3px solid;
+  text-align: center;
+  background-color: darkorange;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 1.5rem;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+      "header" 120px
+      "course" 40px
+      "detail" 70px
+      "text" 
+      "root"
+      "footer" 70px;
+}
+
+header {
+  grid-area: header;
+  @include header-footer;
+}
+
+.title {
+    color: snow;
+    font-family: cursive;
+  }
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .7);
+}
+
+.course {
+    grid-area: course;
+    text-align: center;
+    color: tomato;
+}
+
+.detail {
+  grid-area: detail;
+  color: aliceblue;
+  text-align: center;
+}
+
+#text {
+    grid-area: text;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: olivedrab;
+  }
+span {
+  transition: all 300ms 0s ease;
+}
+  
+.add-snow {
+  font-size: 0.5em;
+  color: snow;
+}
+
+.root {
+    grid-area: root;
+    text-decoration: underline 2px;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    @include header-footer;
+}

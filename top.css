@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.5rem;
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header" 120px "detail"  "start" 1fr "footer" 70px;
+}
+
+header {
+  grid-area: header;
+  border: darkslategrey 3px solid;
+  text-align: center;
+  background-color: darkorange;
+}
+
+.title {
+  color: snow;
+  font-family: cursive;
+}
+
+.detail {
+  grid-area: detail;
+  color: aliceblue;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.start {
+  width: 30%;
+  grid-area: start;
+  border: 3px solid darkgoldenrod;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+footer {
+  grid-area: footer;
+  border: darkslategrey 3px solid;
+  text-align: center;
+  background-color: darkorange;
+}
+
+@media screen and (max-width: 1000px) {
+  .detail {
+    font-size: 1rem;
+  }
+  .start {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=top.css.map */
